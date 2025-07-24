@@ -3,12 +3,10 @@ package com.example.library.dto;
 public class BookDTO {
     private String name;
     private String description;
-    private Boolean onLoan;
 
-    public BookDTO(String name, String description, Boolean onLoan) {
+    public BookDTO(String name, String description) {
         this.name = name;
         this.description = description;
-        this.onLoan = onLoan;
     }
 
     public String getName() {
@@ -25,13 +23,5 @@ public class BookDTO {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Boolean getOnLoan() {
-        return this.onLoan;
-    }
-
-    public void setOnLoan(Boolean onLoan) {
-        this.onLoan = onLoan;
     }
 }

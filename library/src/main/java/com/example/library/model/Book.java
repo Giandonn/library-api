@@ -10,12 +10,10 @@ public class Book {
     private Long id;
     private String name;
     private String description;
-    private Boolean onLoan = false; // emprestado ou nao
 
-    public Book(String name, String description, Boolean onLoan) {
+    public Book(String name, String description) {
         this.name = name;
         this.description = description;
-        this.onLoan = onLoan;
     }
 
     // Construtor default
@@ -43,13 +41,5 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Boolean getOnLoan() {
-        return onLoan;
-    }
-
-    public void setOnLoan(Boolean onLoan) {
-        this.onLoan = onLoan;
     }
 }

@@ -27,7 +27,7 @@ public class BookService {
 
         Book saved = bookRepository.save(book);
 
-        return new BookDTO(saved.getName(), saved.getDescription(), saved.getOnLoan());
+        return new BookDTO(saved.getName(), saved.getDescription());
     }
 
     public void delete(Long id) {
